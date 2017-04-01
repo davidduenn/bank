@@ -58,16 +58,8 @@ void bank::deposit(int id, double amnt) {
     }
 }
 /*
- * Note:
- * for both the above and below functions:
- * I'm making a copy, finding the account
- * with the correct id, and changing the
- * balance.
- * This doesn't work because the balance
- * of the copy is being changed.
- * But there's no good way to access the
- * nth element of a list.
- * I should us a different data structure.
+ * should use a different data structure?
+ * custom content type instead of vector?
  */
 
 
