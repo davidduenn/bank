@@ -4,6 +4,7 @@
 using namespace std;
 
 void clear_screen();
+int get_input(string, int, int);
 
 
 // Everything works fine
@@ -12,66 +13,47 @@ int main() {
     bank bank_inst;
 
     while(1) {
-        int ans = -1;
-        cout << "1 to exit\n";
-        cout << "2 to print bank\n";
-        cout << "3 to create account\n";
-        cout << "4 to access account\n";
-        cin >> ans; cout << endl;
-        if(ans == 1) {
-            break;
-        }
-        else if(ans == 2) {
+        int answer1 = get_input("1 to exit\n2 to print bank\n3 to create account\n4 to access account\n", 1, 3);
+
+        int id = 0;
+        int answer2;
+        switch(answer1) {
+          case 1:
+            return 0;
+          case 2:
             bank_inst.print_bank();
-            cout<<"Enter char to proceed: ";string s; cin>>s;//Waits for key press
-        }
-        else if(ans == 3) {
+            break;
+          case 3:
             bank_inst.create_account();
-        }
-        else if(ans == 4) {
-            cout << "Give id: ";
-            int id = 0;
-            cin >> id; cout << endl;
+            break;
+          case 4:
+            id = get_input("Give id: ", 0, 0);
+            // To-Do, validate id
+            answer2 = get_input("Deposit (1) or Withdraw (2) or Show Balance (3)?\n", 1, 3);
 
-            //get_wahl:
-            cout << "Deposit (1) or Withdraw (2) or Show Balance (3)?\n";
-            int wahl;
-            cin >> wahl; cout << endl;
-
-            /*
-            try {
-                if(wahl<1 || wahl>3) {
-                    throw wahl;
-                }
-            }
-            catch(int wahl) {
-                cout << "Not a good answer\n";
-                goto get_wahl;
-            }
-            */
-
-            if(wahl == 1) {
-                cout << "How much would you like to deposit?\n";
-                double amnt;
-                cin >> amnt; cout << endl;
-                bank_inst.deposit(id, amnt);
-            }
-            else if(wahl == 2) {
-                cout << "How much would you like to withdraw?\n";
-                double amnt;
-                cin >> amnt; cout << endl;
-                bank_inst.withdraw(id, amnt);
-            }
-            else if(wahl == 3) {
+            double amount;
+            switch(answer2) {
+              case 1:
+                amount = get_input("How much would you like to deposit?\n", 0, 0);
+                bank_inst.deposit(id, amount);
+                break;
+              case 2:
+                amount = get_input("How much would you like to withdraw?\n", 0, 0);
+                bank_inst.withdraw(id, amount);
+                break;
+              case 3:
                 cout << "Balance: " << bank_inst.get_balance(id) << endl;
-                cout<<"Enter char to proceed: ";string s; cin>>s;//Waits for key press
+                break;
+              default:
+                cout << "Invalid option \"" << answer2 << "\"." << endl;
+                cout << "Answer should have been between 1 and 3." << endl;
+                break;
             }
-            else {
-                throw wahl;
-            }
-        }
-        else {
-            // invalid option
+            break;
+          default:
+            cout << "Invalid option \"" << answer1 << "\"." << endl;
+            cout << "Answer should have been between 1 and 4." << endl;
+            break;
         }
         clear_screen();
     }
@@ -80,8 +62,36 @@ int main() {
 
 
 void clear_screen() {
-    for(int i=0; i<75; i++) {
+    for(int i=0; i<25; i++) {
         cout << endl;
     }
 }
 
+int get_input(string prompt, int lower_bound, int upper_bound) {
+  // Note: use 0 for either bound to except it
+  cout << prompt;
+  int answer;
+  cin >> answer;
+  cout << endl;
+
+  switch(lower_bound) {
+    case 0:
+      switch(upper_bound) {
+        case 0:
+          // lower_bound - don't care. upper_bound - don't care.
+          return answer;
+        default:
+          // lower_bound - don't care. upper_bound - care.
+          return answer<=upper_bound ? answer : 0;
+      }
+    default:
+      switch(upper_bound) {
+        case 0:
+          // lower_bound - care. upper_bound - don't care.
+          return lower_bound<=answer ? answer : 0;
+        default:
+          // lower_bound - care. upper_bound - care.
+          return lower_bound<=answer<=upper_bound ? answer : 0;
+      }
+  }
+}
