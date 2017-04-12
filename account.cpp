@@ -1,15 +1,18 @@
 #include <iostream>
-#include <stdlib.h>
+#include <stdlib.h> // srand, rand
 #include "account.h"
+#include <time.h> // time
 
-#define NUM_ACCOUNTS 100
+#define MAX_NUM_ACCOUNTS 9000
 
 using namespace std;
 
 
 account::account() {
     balance = 0;
-    id = rand() %NUM_ACCOUNTS + 1000;
+    srand(time(NULL)); // seed random number
+    id = 1000 + rand() %MAX_NUM_ACCOUNTS;
+    // To-Do: only set id if it's not already in use
     first_name = "first";
     last_name = "last";
 }
