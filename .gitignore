@@ -1,0 +1,5 @@
+*.swp
+MY_BANK
+account.o
+bank.o
+main.o
