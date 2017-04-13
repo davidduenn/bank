@@ -28,7 +28,10 @@ int main() {
             break;
           case 4:
             id = get_input("Give id: ", 0, 0);
-            // To-Do, validate id
+            if(!bank_inst.account_exists(id)) {
+              cout << "You don't have an account here\n";
+              break;
+            }
             answer2 = get_input("Deposit (1) or Withdraw (2) or Show Balance (3)?\n", 1, 3);
 
             double amount;

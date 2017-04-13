@@ -78,7 +78,6 @@ double bank::get_balance(int id) {
             return accounts[c].get_balance();
         }
     }
-    cout << "You don't have an account here\n";
     return 0;
 }
 
