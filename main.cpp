@@ -74,6 +74,9 @@ int get_input(string prompt, int lower_bound, int upper_bound) {
   // Note: use 0 for either bound to except it
   cout << prompt;
   int answer;
+  // user input of a char forms a loop
+  // casting as an int breaks apart numbers into single digits
+  // use strings instead
   cin >> answer;
   cout << endl;
 
