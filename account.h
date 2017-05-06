@@ -11,6 +11,7 @@ class account {
         string last_name;
 
         account();
+        account(string first, string last);
         void deposit(double);
         int withdrawl(double);
         void print_account();

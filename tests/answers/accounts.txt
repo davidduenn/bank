@@ -3,24 +3,9 @@
 3 to create account
 4 to access account
 
-Your account id is: 7198
 Give first name: 
 Give last name: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Your account id is: 7198
 
 
 
@@ -36,24 +21,9 @@ Give last name:
 3 to create account
 4 to access account
 
-Your account id is: 7198
 Give first name: 
 Give last name: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Your account id is: 7198
 
 
 
@@ -79,21 +49,6 @@ id:        7198
 full name: Foo Bar
 balance:   0
 ----------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

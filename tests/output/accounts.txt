@@ -3,24 +3,9 @@
 3 to create account
 4 to access account
 
-Your account id is: 8173
 Give first name: 
 Give last name: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Your account id is: 6383
 
 
 
@@ -36,24 +21,9 @@ Give last name:
 3 to create account
 4 to access account
 
-Your account id is: 8173
 Give first name: 
 Give last name: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Your account id is: 4886
 
 
 
@@ -70,30 +40,15 @@ Give last name:
 4 to access account
 
 ----------
-id:        8173
+id:        6383
 full name: David Duenn
 balance:   0
 ----------
 ----------
-id:        8173
+id:        4886
 full name: Foo Bar
 balance:   0
 ----------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
