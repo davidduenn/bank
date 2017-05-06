@@ -65,7 +65,7 @@ int main() {
 
 
 void clear_screen() {
-    for(int i=0; i<25; i++) {
+    for(int i=0; i<10; i++) {
         cout << endl;
     }
 }
