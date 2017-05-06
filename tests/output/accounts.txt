@@ -1,0 +1,111 @@
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
+Your account id is: 8173
+Give first name: 
+Give last name: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
+Your account id is: 8173
+Give first name: 
+Give last name: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
+----------
+id:        8173
+full name: David Duenn
+balance:   0
+----------
+----------
+id:        8173
+full name: Foo Bar
+balance:   0
+----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+

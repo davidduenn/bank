@@ -16,6 +16,14 @@ account.o:	account.cpp
 run:	MY_BANK
 	./MY_BANK
 
+
+test: MY_BANK
+	./tests/run_tests.sh
+
+debug: MY_BANK
+	gdb MY_BANK
+
+
 clean:	
 	rm *.o
 

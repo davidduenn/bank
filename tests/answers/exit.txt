@@ -1,0 +1,5 @@
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
