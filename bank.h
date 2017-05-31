@@ -11,13 +11,13 @@ class bank {
         bool account_exists(int);
         void create_account();
         void print_bank();
-        // Two below should actully be function pointers!!!
-        void deposit(int, double);
-        void withdraw(int, double);
+        void transact(int, double);
         double get_balance(int);
 
     private:
         vector<account> accounts;
+        //should use a different data structure?
+        //custom content type instead of vector?
 };
 
 #endif

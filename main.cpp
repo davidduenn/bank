@@ -38,11 +38,11 @@ int main() {
             switch(answer2) {
               case 1:
                 amount = get_input("How much would you like to deposit?\n", 0, 0);
-                bank_inst.deposit(id, amount);
+                bank_inst.transact(id, amount);
                 break;
               case 2:
                 amount = get_input("How much would you like to withdraw?\n", 0, 0);
-                bank_inst.withdraw(id, amount);
+                bank_inst.transact(id, -amount);
                 break;
               case 3:
                 cout << "Balance: " << bank_inst.get_balance(id) << endl;

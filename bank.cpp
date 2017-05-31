@@ -48,24 +48,10 @@ void bank::print_bank() {
 }
 
 
-// The two below should actually be function pointers!!!
-void bank::deposit(int id, double amnt) {
+void bank::transact(int id, double amnt) {
     for(int c=0; c<accounts.size(); c++) {
         if(accounts[c].id == id) {
-            accounts[c].deposit(amnt);
-        }
-    }
-}
-/*
- * should use a different data structure?
- * custom content type instead of vector?
- */
-
-
-void bank::withdraw(int id, double amnt) {
-    for(int c=0; c<accounts.size(); c++) {
-        if(accounts[c].id == id) {
-            accounts[c].withdrawl(amnt);
+            accounts[c].transact(amnt);
         }
     }
 }

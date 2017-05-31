@@ -27,14 +27,9 @@ account::account(string first, string last) {
 }
 
 
-void account::deposit(double amount) {
-    balance = balance + amount;
-}
-
-
-int account::withdrawl(double amount) {
-    if(balance>amount) {
-        balance = balance-amount;
+int account::transact(double amount) {
+    if(balance+amount>=0) {
+        balance = balance + amount;
         cout << "Transaction successful\n";
         return 0;
     }

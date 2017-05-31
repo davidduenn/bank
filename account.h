@@ -12,8 +12,7 @@ class account {
 
         account();
         account(string first, string last);
-        void deposit(double);
-        int withdrawl(double);
+        int transact(double);
         void print_account();
         void set_name(string, string);
         double get_balance();
