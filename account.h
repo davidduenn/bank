@@ -10,7 +10,6 @@ class account {
         string first_name;
         string last_name;
 
-        account();
         account(string first, string last);
         int transact(double);
         void print_account();
