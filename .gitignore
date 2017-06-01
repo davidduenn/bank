@@ -1,4 +1,5 @@
 *.swp
 MY_BANK
+cpp_test_units
 *.o
 tests/output/*.txt

@@ -1,0 +1,24 @@
+1
+1
+1
+Transaction successful
+Transaction successful
+Transaction successful
+Transaction successful
+Transaction successful
+Transaction successful
+Transaction successful
+Transaction successful
+Transaction successful
+----------
+full name: David Duenn
+balance:   853
+----------
+----------
+full name: John Wayne
+balance:   853
+----------
+----------
+full name: Pope Francis
+balance:   853
+----------
