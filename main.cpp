@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "bank.h"
 #include "helpers.h"
 
@@ -14,6 +15,7 @@ int main() {
 
         int id = 0;
         int answer2;
+        string first, last;
         switch(answer1) {
           case 1:
             return 0;
@@ -21,7 +23,12 @@ int main() {
             bank_inst.print_bank();
             break;
           case 3:
-            bank_inst.create_account();
+            cout << "Give first name: ";
+            cin >> first; cout << endl;
+            cout << "Give last name: ";
+            cin >> last; cout << endl;
+            cout << "Your account id is: ";
+            cout << bank_inst.create_account(first, last) << endl;
             break;
           case 4:
             id = get_int_input("Give id: ", 0, 0);

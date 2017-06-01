@@ -1,6 +1,7 @@
 #ifndef BANK_CLASS
 #define BANK_CLASS
 
+#include <string>
 #include <vector>
 #include "account.h"
 
@@ -9,7 +10,7 @@ class bank {
     public:
         bank();
         bool account_exists(int);
-        void create_account();
+        int create_account(string, string);
         void print_bank();
         void transact(int, double);
         double get_balance(int);

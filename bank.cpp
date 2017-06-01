@@ -22,18 +22,10 @@ bool bank::account_exists(int account_id){
 }
 
 
-void bank::create_account() {
-    string first, last;
-    cout << "Give first name: ";
-    cin >> first; cout << endl;
-    cout << "Give last name: ";
-    cin >> last; cout << endl;
-
+int bank::create_account(string first, string last) {
     account account_inst(first,last);
-
-    cout << "Your account id is: " << account_inst.id << endl;
-
     accounts.push_back(account_inst);
+    return account_inst.id;
 }
 
 
