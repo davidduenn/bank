@@ -15,7 +15,7 @@ int main() {
   cout << test_bank_inst.account_exists(jw) << endl;
   cout << test_bank_inst.account_exists(pf) << endl;
 
-  test_bank_inst.transact(dd, 023);
+  test_bank_inst.transact(dd,  23);
   test_bank_inst.transact(jw, 630);
   test_bank_inst.transact(pf, 204);
 
