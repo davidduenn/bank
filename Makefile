@@ -1,11 +1,14 @@
 all:	MY_BANK
 
-MY_BANK: main.o bank.o account.o
-	g++ -g main.o bank.o account.o -o MY_BANK
+MY_BANK: main.o helpers.o bank.o account.o
+	g++ -g main.o helpers.o bank.o account.o -o MY_BANK
 
 
 main.o:	main.cpp
 	g++ -c -g main.cpp
+
+helpers.o:	helpers.cpp
+	g++ -c -g helpers.cpp
 
 bank.o:	bank.cpp
 	g++ -c -g bank.cpp
