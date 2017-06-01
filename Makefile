@@ -22,11 +22,12 @@ run:	MY_BANK
 
 test_exit:	MY_BANK
 	./MY_BANK < ./tests/test_cases/exit.txt > ./tests/output/exit.txt
-	diff --side-by-side ./tests/output/exit.txt ./tests/answers/exit.txt | grep -v "id\( is\)\?:"
+	diff  ./tests/output/exit.txt ./tests/answers/exit.txt
 
 test_accounts:	MY_BANK
 	./MY_BANK < ./tests/test_cases/accounts.txt > ./tests/output/accounts.txt
-	diff --side-by-side ./tests/output/accounts.txt ./tests/answers/accounts.txt | grep -v "id\( is\)\?:"
+	sed '/id\( is\)\?:/d' -i ./tests/output/accounts.txt
+	diff  ./tests/output/accounts.txt ./tests/answers/accounts.txt
 
 test: test_exit test_accounts
 

@@ -5,7 +5,6 @@
 
 Give first name: 
 Give last name: 
-Your account id is: 7198
 
 
 
@@ -23,7 +22,6 @@ Your account id is: 7198
 
 Give first name: 
 Give last name: 
-Your account id is: 7198
 
 
 
@@ -40,12 +38,10 @@ Your account id is: 7198
 4 to access account
 
 ----------
-id:        7198
 full name: David Duenn
 balance:   0
 ----------
 ----------
-id:        7198
 full name: Foo Bar
 balance:   0
 ----------
