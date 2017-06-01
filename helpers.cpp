@@ -10,7 +10,7 @@ void clear_screen() {
 }
 
 
-int get_input(string prompt, int lower_bound, int upper_bound) {
+int get_int_input(string prompt, int lower_bound, int upper_bound) {
   // Note: use 0 for either bound to except it
   cout << prompt;
   int answer;

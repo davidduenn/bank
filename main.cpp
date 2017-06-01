@@ -10,7 +10,7 @@ int main() {
     bank bank_inst;
 
     while(1) {
-        int answer1 = get_input("1 to exit\n2 to print bank\n3 to create account\n4 to access account\n", 1, 3);
+        int answer1 = get_int_input("1 to exit\n2 to print bank\n3 to create account\n4 to access account\n", 1, 3);
 
         int id = 0;
         int answer2;
@@ -24,21 +24,21 @@ int main() {
             bank_inst.create_account();
             break;
           case 4:
-            id = get_input("Give id: ", 0, 0);
+            id = get_int_input("Give id: ", 0, 0);
             if(!bank_inst.account_exists(id)) {
               cout << "You don't have an account here\n";
               break;
             }
-            answer2 = get_input("Deposit (1) or Withdraw (2) or Show Balance (3)?\n", 1, 3);
+            answer2 = get_int_input("Deposit (1) or Withdraw (2) or Show Balance (3)?\n", 1, 3);
 
             double amount;
             switch(answer2) {
               case 1:
-                amount = get_input("How much would you like to deposit?\n", 0, 0);
+                amount = get_int_input("How much would you like to deposit?\n", 0, 0);
                 bank_inst.transact(id, amount);
                 break;
               case 2:
-                amount = get_input("How much would you like to withdraw?\n", 0, 0);
+                amount = get_int_input("How much would you like to withdraw?\n", 0, 0);
                 bank_inst.transact(id, -amount);
                 break;
               case 3:

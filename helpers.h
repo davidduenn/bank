@@ -5,7 +5,7 @@
 using namespace std;
 
 void clear_screen();
-int get_input(string, int, int);
+int get_int_input(string, int, int);
 
 #endif
 
