@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h> // srand
 #include <string>
 #include "bank.h"
 #include "helpers.h"
@@ -9,6 +10,8 @@ using namespace std;
 // Add error/bad_input checking
 int main() {
     bank bank_inst;
+
+    srand(time(NULL)); // seed random number
 
     while(1) {
         int answer1 = get_int_input("1 to exit\n2 to print bank\n3 to create account\n4 to access account\n", 1, 3);

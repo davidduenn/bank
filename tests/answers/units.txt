@@ -12,13 +12,13 @@ Transaction successful
 Transaction successful
 ----------
 full name: David Duenn
-balance:   853
+balance:   23
 ----------
 ----------
 full name: John Wayne
-balance:   853
+balance:   630
 ----------
 ----------
 full name: Pope Francis
-balance:   853
+balance:   204
 ----------

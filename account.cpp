@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdlib.h> // srand, rand
+#include <stdlib.h> // rand
 #include "account.h"
 #include <time.h> // time
 
@@ -10,7 +10,6 @@ using namespace std;
 
 account::account(string first, string last) {
     balance = 0;
-    srand(time(NULL)); // seed random number
     id = 1000 + rand() %MAX_NUM_ACCOUNTS;
     // To-Do: only set id if it's not already in use
     first_name = first;
