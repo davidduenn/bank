@@ -14,6 +14,7 @@ int main() {
   cout << test_bank_inst.account_exists(dd) << endl;
   cout << test_bank_inst.account_exists(jw) << endl;
   cout << test_bank_inst.account_exists(pf) << endl;
+  cout << test_bank_inst.account_exists(-2) << endl;
 
   test_bank_inst.transact(dd,  23) ? cout << "Tranx failed" << endl : cout << "Trnx succeeded" << endl;
   test_bank_inst.transact(jw, 130) ? cout << "Tranx failed" << endl : cout << "Trnx succeeded" << endl;
