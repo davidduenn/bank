@@ -1,15 +1,33 @@
 1
 1
 1
+Trnx succeeded
+Trnx succeeded
+Trnx succeeded
 ----------
 full name: David Duenn
 balance:   23
 ----------
 ----------
 full name: John Wayne
-balance:   630
+balance:   130
 ----------
 ----------
 full name: Pope Francis
-balance:   204
+balance:   24
+----------
+Trnx succeeded
+Trnx succeeded
+Tranx failed
+----------
+full name: David Duenn
+balance:   0
+----------
+----------
+full name: John Wayne
+balance:   330
+----------
+----------
+full name: Pope Francis
+balance:   24
 ----------
