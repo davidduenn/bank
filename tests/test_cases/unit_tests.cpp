@@ -11,10 +11,10 @@ int main() {
   int jw = test_bank_inst.create_account("John", "Wayne");
   int pf = test_bank_inst.create_account("Pope", "Francis");
 
-  cout << test_bank_inst.account_exists(dd) << endl;
-  cout << test_bank_inst.account_exists(jw) << endl;
-  cout << test_bank_inst.account_exists(pf) << endl;
-  cout << test_bank_inst.account_exists(-2) << endl;
+  test_bank_inst.account_exists(dd) ? cout << "account exists" << endl : cout << "no such account" << endl;
+  test_bank_inst.account_exists(jw) ? cout << "account exists" << endl : cout << "no such account" << endl;
+  test_bank_inst.account_exists(pf) ? cout << "account exists" << endl : cout << "no such account" << endl;
+  test_bank_inst.account_exists(-2) ? cout << "account exists" << endl : cout << "no such account" << endl;
 
   test_bank_inst.transact(dd,  23) ? cout << "Tranx failed" << endl : cout << "Trnx succeeded" << endl;
   test_bank_inst.transact(jw, 130) ? cout << "Tranx failed" << endl : cout << "Trnx succeeded" << endl;
