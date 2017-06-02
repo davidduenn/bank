@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "stdlib.h" // atoi
 using namespace std;
 
 
@@ -13,12 +14,10 @@ void clear_screen() {
 int get_int_input(string prompt, int lower_bound, int upper_bound) {
   // Note: use 0 for either bound to except it
   cout << prompt;
-  int answer;
-  // user input of a char forms a loop
-  // casting as an int breaks apart numbers into single digits
-  // use strings instead
-  cin >> answer;
+  char* input;
+  cin >> input;
   cout << endl;
+  int answer = atoi(input);
 
   switch(lower_bound) {
     case 0:

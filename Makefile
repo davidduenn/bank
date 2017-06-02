@@ -29,13 +29,18 @@ test_accounts:	MY_BANK
 	sed '/id\( is\)\?:/d' -i ./tests/output/accounts.txt
 	diff  ./tests/output/accounts.txt ./tests/answers/accounts.txt
 
+test_input:	MY_BANK
+	./MY_BANK < ./tests/test_cases/input.txt > ./tests/output/input.txt
+	sed '/id\( is\)\?:/d' -i ./tests/output/input.txt
+	diff  ./tests/output/input.txt ./tests/answers/input.txt
+
 test_units:	helpers.o bank.o account.o
 	g++ -g tests/test_cases/unit_tests.cpp bank.o account.o -o cpp_test_units
 	./cpp_test_units > ./tests/output/units.txt
 	sed '/id\( is\)\?:/d' -i ./tests/output/units.txt
 	diff  ./tests/output/units.txt ./tests/answers/units.txt
 
-test:	test_exit test_accounts test_units
+test:	test_exit test_accounts test_input test_units
 
 debug: MY_BANK
 	gdb MY_BANK

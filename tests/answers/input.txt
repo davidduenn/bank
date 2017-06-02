@@ -1,0 +1,123 @@
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
+Invalid option "0".
+Answer should have been between 1 and 4.
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
+Invalid option "10".
+Answer should have been between 1 and 4.
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
+Bank is empty
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
+Give first name: 
+Give last name: 
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
+----------
+full name: David Duenn
+balance:   0
+----------
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
+You don't have an account here
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+
+You don't have an account here
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to create account
+4 to access account
+

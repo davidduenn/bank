@@ -7,7 +7,6 @@
 using namespace std;
 
 
-// Add error/bad_input checking
 int main() {
     bank bank_inst;
 
