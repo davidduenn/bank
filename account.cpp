@@ -20,11 +20,9 @@ account::account(string first, string last) {
 int account::transact(double amount) {
     if(balance+amount>=0) {
         balance = balance + amount;
-        cout << "Transaction successful\n";
         return 0;
     }
     else {
-        cout << "Not enough money to complete transaction\n";
         return 1;
     }
 }

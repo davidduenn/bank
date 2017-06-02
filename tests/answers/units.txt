@@ -1,15 +1,6 @@
 1
 1
 1
-Transaction successful
-Transaction successful
-Transaction successful
-Transaction successful
-Transaction successful
-Transaction successful
-Transaction successful
-Transaction successful
-Transaction successful
 ----------
 full name: David Duenn
 balance:   23

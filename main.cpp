@@ -45,7 +45,9 @@ int main() {
             switch(answer2) {
               case 1:
                 amount = get_int_input("How much would you like to deposit?\n", 0, 0);
-                bank_inst.transact(id, amount);
+                bank_inst.transact(id, amount) ?
+                  cout << "Not enough money to complete transaction\n" :
+                  cout << "Transaction successful\n";
                 break;
               case 2:
                 amount = get_int_input("How much would you like to withdraw?\n", 0, 0);

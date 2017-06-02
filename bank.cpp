@@ -40,10 +40,10 @@ void bank::print_bank() {
 }
 
 
-void bank::transact(int id, double amnt) {
+int bank::transact(int id, double amnt) {
     for(int c=0; c<accounts.size(); c++) {
         if(accounts[c].id == id) {
-            accounts[c].transact(amnt);
+            return accounts[c].transact(amnt);
         }
     }
 }

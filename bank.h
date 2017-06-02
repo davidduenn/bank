@@ -12,7 +12,7 @@ class bank {
         bool account_exists(int);
         int create_account(string, string);
         void print_bank();
-        void transact(int, double);
+        int transact(int, double);
         double get_balance(int);
 
     private:
