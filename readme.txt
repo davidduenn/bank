@@ -1,3 +1,5 @@
+A bank implemented in c++ for exercise
+
 Currently:
   bank: class
   account: class
