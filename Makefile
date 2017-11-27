@@ -1,7 +1,7 @@
 all:	MY_BANK
 
-MY_BANK: main.o helpers.o bank.o account.o
-	g++ -g main.o helpers.o bank.o account.o -o MY_BANK
+MY_BANK: main.o helpers.o bank.o member.o account.o
+	g++ -g main.o helpers.o bank.o member.o account.o -o MY_BANK
 
 
 main.o:	main.cpp
@@ -12,6 +12,9 @@ helpers.o:	helpers.cpp
 
 bank.o:	bank.cpp
 	g++ -c -g bank.cpp
+
+member.o:	member.cpp
+	g++ -c -g member.cpp
 
 account.o:	account.cpp
 	g++ -c -g account.cpp
