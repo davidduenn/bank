@@ -19,6 +19,7 @@ balance:   24
 ----------
 Trnx succeeded
 Trnx succeeded
+Not enough funds to make withdrawl. Cancelled.
 Tranx failed
 ----------
 full name: David Duenn
