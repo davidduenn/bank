@@ -21,20 +21,24 @@ run:	MY_BANK
 
 
 test_exit:	MY_BANK
+	if [ ! -f ./tests/output/exit.txt ]; then touch ./tests/output/exit.txt; fi
 	./MY_BANK < ./tests/test_cases/exit.txt > ./tests/output/exit.txt
 	diff  ./tests/output/exit.txt ./tests/answers/exit.txt
 
 test_accounts:	MY_BANK
+	if [ ! -f ./tests/output/accounts.txt ]; then touch ./tests/output/accounts.txt; fi
 	./MY_BANK < ./tests/test_cases/accounts.txt > ./tests/output/accounts.txt
 	sed '/id\( is\)\?:/d' -i ./tests/output/accounts.txt
 	diff  ./tests/output/accounts.txt ./tests/answers/accounts.txt
 
 test_input:	MY_BANK
+	if [ ! -f ./tests/output/input.txt ]; then touch ./tests/output/input.txt; fi
 	./MY_BANK < ./tests/test_cases/input.txt > ./tests/output/input.txt
 	sed '/id\( is\)\?:/d' -i ./tests/output/input.txt
 	diff  ./tests/output/input.txt ./tests/answers/input.txt
 
 test_units:	helpers.o bank.o account.o
+	if [ ! -f ./tests/output/units.txt ]; then touch ./tests/output/units.txt; fi
 	g++ -g tests/test_cases/unit_tests.cpp bank.o account.o -o cpp_test_units
 	./cpp_test_units > ./tests/output/units.txt
 	sed '/id\( is\)\?:/d' -i ./tests/output/units.txt
