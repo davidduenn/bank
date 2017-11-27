@@ -46,6 +46,7 @@ int bank::transact(int id, double amnt) {
             return accounts[c].transact(amnt);
         }
     }
+    return 0;
 }
 
 
