@@ -36,7 +36,7 @@ int get_int_input(string prompt, int lower_bound, int upper_bound) {
           return lower_bound<=answer ? answer : 0;
         default:
           // lower_bound - care. upper_bound - care.
-          return lower_bound<=answer<=upper_bound ? answer : 0;
+          return (lower_bound<=answer && answer<=upper_bound) ? answer : 0;
       }
   }
 }
