@@ -14,10 +14,10 @@ void clear_screen() {
 int get_int_input(string prompt, int lower_bound, int upper_bound) {
   // Note: use 0 for either bound to except it
   cout << prompt;
-  char* input;
+  string input;
   cin >> input;
   cout << endl;
-  int answer = atoi(input);
+  int answer = stoi(input);
 
   switch(lower_bound) {
     case 0:
