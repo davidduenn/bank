@@ -17,7 +17,13 @@ int get_int_input(string prompt, int lower_bound, int upper_bound) {
   string input;
   cin >> input;
   cout << endl;
-  int answer = stoi(input);
+  int answer = 0;
+  try {
+    answer = stoi(input);
+  } catch(const exception& e) {
+    cout << "Invalid input." << endl;
+    return -1;
+  }
 
   switch(lower_bound) {
     case 0:
