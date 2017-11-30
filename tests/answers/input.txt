@@ -3,7 +3,8 @@
 3 to create account
 4 to access account
 
-Invalid option "0".
+Non-numeric input.
+Invalid input.
 Answer should have been between 1 and 4.
 
 
@@ -20,7 +21,7 @@ Answer should have been between 1 and 4.
 3 to create account
 4 to access account
 
-Invalid option "10".
+Invalid input.
 Answer should have been between 1 and 4.
 
 
@@ -89,6 +90,7 @@ balance:   0
 3 to create account
 4 to access account
 
+Non-numeric input.
 You don't have an account here
 
 

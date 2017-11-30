@@ -21,7 +21,7 @@ int get_int_input(string prompt, int lower_bound, int upper_bound) {
   try {
     answer = stoi(input);
   } catch(const exception& e) {
-    cout << "Invalid input." << endl;
+    cout << "Non-numeric input." << endl;
     return -1;
   }
 
