@@ -54,7 +54,7 @@ debug: MY_BANK
 
 
 clean:	
-	rm *.o
+	rm *.o cpp_test_units
 
 nuke: clean
 	rm MY_BANK
