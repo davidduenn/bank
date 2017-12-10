@@ -6,19 +6,19 @@ using namespace std;
 
 class account {
     public:
-        int id;
-        string first_name;
-        string last_name;
-
-        account(string first, string last);
+        account(double, string);
         int transact(double);
         void print_account();
-        void set_name(string, string);
         double get_balance();
-
+        int get_id();
+        account *next;
     private:
         double balance;
+        int id;
+        string name;
 };
+// Have a super class and have it inherit
+// down to the checking or savings account?
 
 #endif
 

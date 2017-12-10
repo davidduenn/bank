@@ -2,23 +2,20 @@
 #define BANK_CLASS
 
 #include <string>
-#include <vector>
-#include "account.h"
+#include "member.h"
 
 
 class bank {
     public:
         bank();
-        bool account_exists(int);
-        int create_account(string, string);
+        //bool account_exists(int);
+        int create_member(string, int, char);
         void print_bank();
-        int transact(int, double);
-        double get_balance(int);
-
+        int transact(int, int, double);
+        double get_balance(int, int);
     private:
-        vector<account> accounts;
+        class member *members;
         //should use a different data structure?
-        //custom content type instead of vector?
 };
 
 #endif

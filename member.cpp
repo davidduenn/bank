@@ -19,9 +19,40 @@ member::member(string name="", int age=0, char currency='$') {
   name = name;
   age = age;
   currency = currency;
-  account_ptr = NULL;
+  accounts = nullptr;
 }
 
 int member::get_id() {
   return id;
 }
+
+int member::transact(int account_id, double amnt) {
+  account *account_ptr = this->accounts;
+  while(account_ptr != nullptr) {
+    if(account_ptr->get_id() == account_id) {
+      account_ptr->transact(amnt);
+      return 0;
+    } else {
+      account_ptr = account_ptr->next;
+    }
+  }
+  cout << "Failed. Account not found" << endl;
+  return 1;
+}
+
+double member::get_balance(int account_id) {
+  account *account_ptr = this->accounts;
+  while(account_ptr != nullptr) {
+    if(account_ptr->get_id() == account_id) {
+      return account_ptr->get_balance();
+    } else {
+      account_ptr = account_ptr->next;
+    }
+  }
+  cout << "Failed. Account not found" << endl;
+  return 1;
+}
+
+// todo transact and get_balance are mostly 
+// the same code. Pull common code to a 
+// function
