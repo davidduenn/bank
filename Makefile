@@ -1,23 +1,23 @@
 all:	MY_BANK
 
 MY_BANK: main.o helpers.o bank.o member.o account.o
-	g++ -g main.o helpers.o bank.o member.o account.o -o MY_BANK
+	g++ -g -std=c++11 main.o helpers.o bank.o member.o account.o -o MY_BANK
 
 
 main.o:	main.cpp
-	g++ -c -g main.cpp
+	g++ -c -g -std=c++11 main.cpp
 
 helpers.o:	helpers.cpp
-	g++ -c -g helpers.cpp
+	g++ -c -g -std=c++11 helpers.cpp
 
 bank.o:	bank.cpp
-	g++ -c -g bank.cpp
+	g++ -c -g -std=c++11 bank.cpp
 
 member.o:	member.cpp
-	g++ -c -g member.cpp
+	g++ -c -g -std=c++11 member.cpp
 
 account.o:	account.cpp
-	g++ -c -g account.cpp
+	g++ -c -g -std=c++11 account.cpp
 
 run:	MY_BANK
 	./MY_BANK
@@ -42,7 +42,7 @@ test_input:	MY_BANK
 
 test_units:	helpers.o bank.o account.o
 	if [ ! -f ./tests/output/units.txt ]; then touch ./tests/output/units.txt; fi
-	g++ -g tests/test_cases/unit_tests.cpp bank.o account.o -o cpp_test_units
+	g++ -g -std=c++11 tests/test_cases/unit_tests.cpp bank.o account.o -o cpp_test_units
 	./cpp_test_units > ./tests/output/units.txt
 	sed '/id\( is\)\?:/d' -i ./tests/output/units.txt
 	diff  ./tests/output/units.txt ./tests/answers/units.txt
