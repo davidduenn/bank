@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "stdlib.h" // atoi
+
 using namespace std;
 
 
