@@ -17,6 +17,7 @@ class bank {
         double get_balance(int, int);
     private:
         class member *members;
+        member* get_member(int);
         //should use a different data structure?
 };
 

@@ -44,17 +44,14 @@ int bank::add_member(string name, int age, char currency) {
 
 
 int bank::add_account(int member_id, double balance=0.0, string name="") {
-  member *member_ptr = this->members;
-  while(member_ptr != nullptr) {
-    if(member_ptr->get_id() == member_id) {
-      member_ptr->add_account(balance, name);
-      return 0;
-    } else {
-      member_ptr = member_ptr->next_member;
-    }
+  member *member_ptr = get_member(member_id);
+  if(member_ptr == nullptr) {
+    return -1;
+  } else {
+    member_ptr->add_account(balance, name);
+    return 1;
   }
-  cout << "Failed. Member not found." << endl;
-  return 1;
+
 }
 
 
@@ -76,33 +73,31 @@ void bank::print_bank() {
 }
 
 
-int bank::transact(int id, int account, double amnt) {
-  member *member_ptr = this->members;
-  while(member_ptr != nullptr) {
-    if(member_ptr->get_id() == id) {
-      member_ptr->transact(account, amnt);
-      return 0;
-    } else {
-      member_ptr = member_ptr->next_member;
-    }
+int bank::transact(int member_id, int account, double amnt) {
+  member *member_ptr = get_member(member_id);
+  if(member_ptr == nullptr) {
+    return -1;
   }
-  cout << "Failed. Member not found." << endl;
-  return 1;
+  return member_ptr->transact(account, amnt);
 }
 
 double bank::get_balance(int member_id, int account_id) {
-  member *member_ptr = this ->members;
+  member *member_ptr = get_member(member_id);
+  if(member_ptr == nullptr) {
+    return -1.0;
+  }
+  return member_ptr->get_balance(account_id);
+}
+
+member* bank::get_member(int member_id) {
+  member *member_ptr = this->members;
   while(member_ptr != nullptr) {
     if(member_ptr->get_id() == member_id) {
-      return member_ptr->get_balance(account_id);
+      return member_ptr;
     } else {
       member_ptr = member_ptr->next_member;
     }
   }
   cout << "Failed. Member not found." << endl;
-  return 1;
+  return nullptr;
 }
-
-// todo transact and get_balance (and add_account) are mostly 
-// the same code. Pull common code to a 
-// function
