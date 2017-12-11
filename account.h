@@ -6,9 +6,9 @@ using namespace std;
 
 class account {
     public:
-        account(double, string);
+        account(int, double, string);
         int transact(double);
-        void print_account();
+        void print_account(char);
         double get_balance();
         int get_id();
         account *next;

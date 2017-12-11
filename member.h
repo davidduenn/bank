@@ -9,6 +9,8 @@ class member {
   public:
     void print_member();
     class account *accounts;
+    void add_account(double, string);
+    void rm_account();
     member(string, int, char);
     int get_id();
     class member *next_member;

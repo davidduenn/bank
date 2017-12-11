@@ -4,9 +4,11 @@
 using namespace std;
 
 
-account::account(double balance = 0, string name = "") {
-    balance = balance;
-    name = name;
+account::account(int account_id, double balance, string name) {
+  this->id = account_id;
+  this->balance = balance;
+  this->name = name;
+  this->next = nullptr;
 }
 
 
@@ -23,14 +25,12 @@ int account::transact(double amount) {
 }
 
 
-void account::print_account() {
-    cout << "----------\n";
-    /*
-    cout << "id:        " << this->id << endl;
-    cout << "full name: " << this->first_name << " " << this->last_name << endl;
-    cout << "balance:   " << this->balance << endl;
-    */
-    cout << "----------\n";
+void account::print_account(char currency) {
+  cout << "----------\n";
+  cout << "id:        " << this->id << endl;
+  cout << "name:      " << this->name << endl;
+  cout << "balance:   " << currency << this->balance << endl;
+  cout << "----------\n";
 }
 
 

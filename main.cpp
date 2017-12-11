@@ -36,7 +36,7 @@ int main() {
             cin >> currency; cout << endl;
             cout << "Your member id is: ";
             // Check that this is a string, int, char
-            cout << bank_inst.create_member(name, age, currency) << endl;
+            cout << bank_inst.add_member(name, age, currency) << endl;
             break;
           case 4:
             member_id = get_int_input("Give member id: ", 0, 0);

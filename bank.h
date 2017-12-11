@@ -9,7 +9,9 @@ class bank {
     public:
         bank();
         //bool account_exists(int);
-        int create_member(string, int, char);
+        int add_member(string, int, char);
+        int add_account(int, double, string);
+        void rm_account();
         void print_bank();
         int transact(int, int, double);
         double get_balance(int, int);
