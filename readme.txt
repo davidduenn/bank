@@ -16,3 +16,13 @@ account class a sub class to member class. Difficult to keep code straight.
 May need to rewrite everything and then try to compile.
 
 Just create a new project from the ground up and take major chunks from this project?
+
+Menu:
+  exit
+  print bank
+  create member
+  access member
+    deposit
+    withdraw
+    show balance
+    add account
