@@ -10,6 +10,7 @@ using namespace std;
 void member::print_member() {
   cout << "Name: " << name << endl;
   cout << "Age: " << age << " Y.O." << endl;
+  cout << "Member ID: " << id << endl;
   if(this->accounts == nullptr) {
     cout << "No accounts" << endl;
   } else {
