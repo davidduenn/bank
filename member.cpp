@@ -18,7 +18,7 @@ void member::print_member() {
     account *account_iterator = nullptr;
     do {
       this->accounts->print_account(currency);
-      account_iterator = account_iterator->next;
+      account_iterator = this->accounts->next;
     } while(account_iterator != nullptr);
   }
 }
