@@ -67,6 +67,9 @@ void bank::print_bank() {
     member *member_ptr = this->members;
     while(member_ptr != nullptr) {
       member_ptr->print_member();
+      if(member_ptr->next_member != nullptr) {
+        cout << "-----" << endl;
+      }
       member_ptr = member_ptr->next_member;
     }
   }
