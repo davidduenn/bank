@@ -26,11 +26,10 @@ int account::transact(double amount) {
 
 
 void account::print_account(char currency) {
-  cout << "----------\n";
-  cout << "id:        " << this->id << endl;
-  cout << "name:      " << this->name << endl;
-  cout << "balance:   " << currency << this->balance << endl;
-  cout << "----------\n";
+  cout << "  ---\n";
+  cout << "  id:        " << this->id << endl;
+  cout << "  name:      " << this->name << endl;
+  cout << "  balance:   " << currency << this->balance << endl;
 }
 
 
