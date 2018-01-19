@@ -1,27 +1,11 @@
 1 to exit
 2 to print bank
-3 to create account
-4 to access account
+3 to add member
+4 to access member
 
-Give first name: 
-Give last name: 
-
-
-
-
-
-
-
-
-
-
-1 to exit
-2 to print bank
-3 to create account
-4 to access account
-
-Give first name: 
-Give last name: 
+Give member name: 
+Give age: 
+Give currency char: 
 
 
 
@@ -34,17 +18,12 @@ Give last name:
 
 1 to exit
 2 to print bank
-3 to create account
-4 to access account
+3 to add member
+4 to access member
 
-----------
-full name: David Duenn
-balance:   0
-----------
-----------
-full name: Foo Bar
-balance:   0
-----------
+Give member name: 
+Give age: 
+Give currency char: 
 
 
 
@@ -57,6 +36,31 @@ balance:   0
 
 1 to exit
 2 to print bank
-3 to create account
-4 to access account
+3 to add member
+4 to access member
+
+-----
+Name: David Duenn
+Age: 90 Y.O.
+Member ID: 1848
+No accounts
+-----
+Name: Foo Bar
+Age: 8 Y.O.
+Member ID: 4572
+No accounts
+
+
+
+
+
+
+
+
+
+
+1 to exit
+2 to print bank
+3 to add member
+4 to access member
 
