@@ -8,6 +8,7 @@ using namespace std;
 
 
 void member::print_member() {
+  cout << "-----" << endl;
   cout << "Name: " << name << endl;
   cout << "Age: " << age << " Y.O." << endl;
   cout << "Member ID: " << id << endl;
