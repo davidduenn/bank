@@ -1,7 +1,7 @@
 1 to exit
 2 to print bank
-3 to create account
-4 to access account
+3 to add member
+4 to access member
 
 Non-numeric input.
 Invalid input.
@@ -18,8 +18,8 @@ Answer should have been between 1 and 4.
 
 1 to exit
 2 to print bank
-3 to create account
-4 to access account
+3 to add member
+4 to access member
 
 Invalid input.
 Answer should have been between 1 and 4.
@@ -35,8 +35,8 @@ Answer should have been between 1 and 4.
 
 1 to exit
 2 to print bank
-3 to create account
-4 to access account
+3 to add member
+4 to access member
 
 Bank is empty
 
@@ -51,30 +51,14 @@ Bank is empty
 
 1 to exit
 2 to print bank
-3 to create account
-4 to access account
+3 to add member
+4 to access member
 
-Give first name: 
-Give last name: 
-
-
-
-
-
-
-
-
-
-
-1 to exit
-2 to print bank
-3 to create account
-4 to access account
-
-----------
-full name: David Duenn
-balance:   0
-----------
+Give member name: 
+Give age: 
+Non-numeric input.
+Give age: 
+Give currency char: 
 
 
 
@@ -87,11 +71,12 @@ balance:   0
 
 1 to exit
 2 to print bank
-3 to create account
-4 to access account
+3 to add member
+4 to access member
 
 Non-numeric input.
-You don't have an account here
+Invalid input.
+Answer should have been between 1 and 4.
 
 
 
@@ -104,10 +89,15 @@ You don't have an account here
 
 1 to exit
 2 to print bank
-3 to create account
-4 to access account
+3 to add member
+4 to access member
 
-You don't have an account here
+Deposit (1) or Withdraw (2) or Show Balance (3) or Add Account (4)?
+
+How much would you like to deposit?
+
+Failed. Member not found.
+Not enough money to complete transaction
 
 
 
@@ -120,6 +110,6 @@ You don't have an account here
 
 1 to exit
 2 to print bank
-3 to create account
-4 to access account
+3 to add member
+4 to access member
 
