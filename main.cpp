@@ -30,7 +30,8 @@ int main() {
             break;
           case 3:
             cout << "Give member name: ";
-            cin >> member_name; cout << endl;
+            cin.ignore(); // clear the cin buffer
+            getline(cin, member_name); cout << endl; // getline() can take spaces. cin can't.
             cout << "Give age: ";
             cin >> age; cout << endl;
             cout << "Give currency char: ";
