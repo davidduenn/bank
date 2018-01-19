@@ -39,7 +39,8 @@ int bank::add_account(int member_id, double balance=0.0, string name="") {
 }
 
 
-void bank::rm_account() {
+void bank::rm_member() {
+  // delete member
 }
 
 

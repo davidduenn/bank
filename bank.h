@@ -11,7 +11,7 @@ class bank {
         //bool account_exists(int);
         int add_member(string, int, char);
         int add_account(int, double, string);
-        void rm_account();
+        void rm_member();
         void print_bank();
         int transact(int, int, double);
         double get_balance(int, int);
