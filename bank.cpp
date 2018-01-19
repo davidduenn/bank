@@ -9,22 +9,6 @@ bank::bank() {
 }
 
 
-/*
-bool bank::account_exists(int account_id){
-    if(accounts.empty())
-        return 0;
-
-    for(int c=0; c<accounts.size(); c++) {
-        if(accounts[c].id == account_id) {
-            return 1;
-        }
-    }
-    return 0;
-}
-todo: is bank::member_exists() needed? 10/Dec/2017
-*/
-
-
 int bank::add_member(string name, int age, char currency) {
   member *new_member = new member(name, age, currency);
   if(this->members == nullptr) {
@@ -87,6 +71,10 @@ double bank::get_balance(int member_id, int account_id) {
     return -1.0;
   }
   return member_ptr->get_balance(account_id);
+}
+
+bool bank::member_exists(int member_id) {
+  return (get_member(member_id) ? 1 : 0);
 }
 
 member* bank::get_member(int member_id) {

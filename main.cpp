@@ -43,12 +43,10 @@ int main() {
             break;
           case 4:
             member_id = get_int_input("Give member id: ", 0, -1);
-            /*
-            if(!bank_inst.account_exists(id)) {
-              cout << "You don't have an account here\n";
+            if(!bank_inst.member_exists(member_id)) {
+              // break if member does not exist
               break;
             }
-            */
             answer2 = get_int_input("Deposit (1) or Withdraw (2) or Show Balance (3) or Add Account (4)?\n", 1, 4);
 
             double amount;
@@ -56,9 +54,7 @@ int main() {
               case 1:
                 amount = get_int_input("How much would you like to deposit?\n", 0, -1);
                 account_id = get_int_input("Give account id: ", 0, -1);
-                bank_inst.transact(member_id, account_id, amount) ?
-                  cout << "Not enough money to complete transaction\n" :
-                  cout << "Transaction successful\n";
+                bank_inst.transact(member_id, account_id, amount);
                 break;
               case 2:
                 amount = get_int_input("How much would you like to withdraw?\n", 0, -1);
