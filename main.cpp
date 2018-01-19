@@ -33,7 +33,7 @@ int main() {
             cin.ignore(); // clear the cin buffer
             getline(cin, member_name); cout << endl; // getline() can take spaces. cin can't.
             do {
-            age = get_int_input("Give age: ", 0, 0);
+            age = get_int_input("Give age: ", 0, -1);
             } while(age<0);
             cout << "Give currency char: ";
             cin >> currency; cout << endl;
@@ -42,7 +42,7 @@ int main() {
             cout << bank_inst.add_member(member_name, age, currency) << endl;
             break;
           case 4:
-            member_id = get_int_input("Give member id: ", 0, 0);
+            member_id = get_int_input("Give member id: ", 0, -1);
             /*
             if(!bank_inst.account_exists(id)) {
               cout << "You don't have an account here\n";
@@ -54,19 +54,19 @@ int main() {
             double amount;
             switch(answer2) {
               case 1:
-                amount = get_int_input("How much would you like to deposit?\n", 0, 0);
-                account_id = get_int_input("Give account id: ", 0, 0);
+                amount = get_int_input("How much would you like to deposit?\n", 0, -1);
+                account_id = get_int_input("Give account id: ", 0, -1);
                 bank_inst.transact(member_id, account_id, amount) ?
                   cout << "Not enough money to complete transaction\n" :
                   cout << "Transaction successful\n";
                 break;
               case 2:
-                amount = get_int_input("How much would you like to withdraw?\n", 0, 0);
-                account_id = get_int_input("Give account id: ", 0, 0);
+                amount = get_int_input("How much would you like to withdraw?\n", 0, -1);
+                account_id = get_int_input("Give account id: ", 0, -1);
                 bank_inst.transact(member_id, account_id, -amount);
                 break;
               case 3:
-                account_id = get_int_input("Give account id: ", 0, 0);
+                account_id = get_int_input("Give account id: ", 0, -1);
                 cout << "Balance: " << bank_inst.get_balance(member_id, account_id) << endl;
                 break;
               case 4:

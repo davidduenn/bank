@@ -12,7 +12,7 @@ void clear_screen() {
 
 
 int get_int_input(string prompt, int lower_bound, int upper_bound) {
-  // Note: use 0 for either bound to except it
+  // Note: use -1 for either bound to except it
   cout << prompt;
   string input;
   cin >> input;
@@ -26,23 +26,23 @@ int get_int_input(string prompt, int lower_bound, int upper_bound) {
   }
 
   switch(lower_bound) {
-    case 0:
+    case -1:
       switch(upper_bound) {
-        case 0:
+        case -1:
           // lower_bound - don't care. upper_bound - don't care.
           return answer;
         default:
           // lower_bound - don't care. upper_bound - care.
-          return answer<=upper_bound ? answer : 0;
+          return answer<=upper_bound ? answer : -1;
       }
     default:
       switch(upper_bound) {
-        case 0:
+        case -1:
           // lower_bound - care. upper_bound - don't care.
-          return lower_bound<=answer ? answer : 0;
+          return lower_bound<=answer ? answer : -1;
         default:
           // lower_bound - care. upper_bound - care.
-          return (lower_bound<=answer && answer<=upper_bound) ? answer : 0;
+          return (lower_bound<=answer && answer<=upper_bound) ? answer : -1;
       }
   }
 }
