@@ -92,12 +92,7 @@ Answer should have been between 1 and 4.
 3 to add member
 4 to access member
 
-Deposit (1) or Withdraw (2) or Show Balance (3) or Add Account (4)?
-
-How much would you like to deposit?
-
 Failed. Member not found.
-Not enough money to complete transaction
 
 
 
