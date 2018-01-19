@@ -32,8 +32,9 @@ int main() {
             cout << "Give member name: ";
             cin.ignore(); // clear the cin buffer
             getline(cin, member_name); cout << endl; // getline() can take spaces. cin can't.
-            cout << "Give age: ";
-            cin >> age; cout << endl;
+            do {
+            age = get_int_input("Give age: ", 0, 0);
+            } while(age<0);
             cout << "Give currency char: ";
             cin >> currency; cout << endl;
             cout << "Your member id is: ";
