@@ -45,6 +45,7 @@ int main() {
             member_id = get_int_input("Give member id: ", 0, -1);
             if(!bank_inst.member_exists(member_id)) {
               // break if member does not exist
+              cout << "Failure. Member not found." << endl;
               break;
             }
             answer2 = get_int_input("Deposit (1), Withdraw (2), Show Balance (3), Add Account (4), Remove Account (5)?\n", 1, 5);

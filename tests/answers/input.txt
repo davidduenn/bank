@@ -92,7 +92,7 @@ Answer should have been between 1 and 4.
 3 to add member
 4 to access member
 
-Failed. Member not found.
+Failure. Member not found.
 
 
 
