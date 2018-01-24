@@ -52,6 +52,9 @@ test:	test_exit test_members test_input test_units
 debug: MY_BANK
 	gdb MY_BANK
 
+valgrind: MY_BANK
+	valgrind ./MY_BANK
+
 
 clean:	
 	rm *.o cpp_test_units
