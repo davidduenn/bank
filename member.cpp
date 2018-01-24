@@ -15,14 +15,15 @@ void member::print_member() {
   if(this->accounts == nullptr) {
     cout << "No accounts" << endl;
   } else {
-    // loop through and print accounts
-    account *account_iterator = nullptr;
-    do {
-      this->accounts->print_account(currency);
-      account_iterator = this->accounts->next;
-    } while(account_iterator != nullptr);
+    account *account_iterator = this->accounts;
+    while(account_iterator != nullptr) {
+      // loop through and print accounts
+      account_iterator->print_account(currency);
+      account_iterator = account_iterator->next;
+    }
   }
 }
+
 
 void member::add_account(double balance, string name) {
   if(this->accounts == nullptr) {
@@ -42,9 +43,11 @@ void member::add_account(double balance, string name) {
   }
 }
 
+
 void member::rm_account() {
   // delete account
 }
+
 
 member::member(string name="", int age=0, char currency='$') {
   id = 1000 + rand() %MAX_NUM_ACCOUNTS;
@@ -60,6 +63,7 @@ int member::get_id() {
   return id;
 }
 
+
 int member::transact(int account_id, double amnt) {
   account *account_ptr = this->accounts;
   while(account_ptr != nullptr) {
@@ -73,6 +77,7 @@ int member::transact(int account_id, double amnt) {
   cout << "Failed. Account not found" << endl;
   return 1;
 }
+
 
 double member::get_balance(int account_id) {
   account *account_ptr = this->accounts;
