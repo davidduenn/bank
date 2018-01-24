@@ -12,9 +12,9 @@ class account {
         void print_account(char);
         double get_balance();
         int get_id();
+        account* next;
     private:
         double balance;
-        account *next;
         int id;
         string name;
 };

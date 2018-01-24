@@ -1,4 +1,4 @@
-TODO: make a server which listens to a port and clients which connect to the server for transactions.
+make a server which listens to a port and clients which connect to the server for transactions.
 
 fix unit test after member code introduced
 
@@ -13,3 +13,5 @@ Merge in the old bank.cpp file
 only set member id if it doesn't already exist
 
 add destructors
+
+move 'next' account pointer to private
