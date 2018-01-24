@@ -6,8 +6,6 @@ implement rm_member
 
 implement rm_account
 
-add bank::account_exists() ?
-
 Merge in the old bank.cpp file
 
 only set member id if it doesn't already exist
