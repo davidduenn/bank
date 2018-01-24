@@ -14,7 +14,7 @@ bank::~bank() {
   while(member_iterator) {
     // run through members and delete them
     member *target_member = member_iterator;
-    member_iterator = member_iterator->next_member;
+    member_iterator = member_iterator->next;
     delete target_member;
   }
 }
@@ -28,11 +28,11 @@ int bank::add_member(string name, int age, char currency) {
   } else {
     // if non-first member
     member *member_iterator = this->members;
-    while(member_iterator->next_member != nullptr) {
-      member_iterator = member_iterator->next_member;
+    while(member_iterator->next != nullptr) {
+      member_iterator = member_iterator->next;
     }
     // put on end of linked list
-    member_iterator->next_member = new_member;
+    member_iterator->next = new_member;
   }
   return new_member->get_id();
 }
@@ -63,7 +63,7 @@ void bank::print_bank() {
     while(member_ptr != nullptr) {
       // loop through and print members
       member_ptr->print_member();
-      member_ptr = member_ptr->next_member;
+      member_ptr = member_ptr->next;
     }
   }
 }
@@ -95,7 +95,7 @@ member* bank::get_member(int member_id) {
     if(member_ptr->get_id() == member_id) {
       return member_ptr;
     } else {
-      member_ptr = member_ptr->next_member;
+      member_ptr = member_ptr->next;
     }
   }
   cout << "Failed. Member not found." << endl;

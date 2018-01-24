@@ -14,7 +14,7 @@ member::member(string name="", int age=0, char currency='$') {
   this->age = age;
   this->currency = currency;
   this->accounts = nullptr;
-  this->next_member = nullptr;
+  this->next = nullptr;
 }
 
 

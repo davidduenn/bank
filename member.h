@@ -13,7 +13,7 @@ class member {
     void add_account(double, string);
     void rm_account();
     int get_id();
-    class member *next_member;
+    class member *next;
     int transact(int, double);
     double get_balance(int);
   private:
