@@ -47,10 +47,10 @@ void bank::rm_member() {
 void bank::print_bank() {
   if(this->members == nullptr) {
     cout << "Bank is empty\n";
-    return;
   } else {
     member *member_ptr = this->members;
     while(member_ptr != nullptr) {
+      // loop through and print members
       member_ptr->print_member();
       member_ptr = member_ptr->next_member;
     }
