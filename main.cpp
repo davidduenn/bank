@@ -47,7 +47,7 @@ int main() {
               // break if member does not exist
               break;
             }
-            answer2 = get_int_input("Deposit (1) or Withdraw (2) or Show Balance (3) or Add Account (4)?\n", 1, 4);
+            answer2 = get_int_input("Deposit (1), Withdraw (2), Show Balance (3), Add Account (4), Remove Account (5)?\n", 1, 5);
 
             double amount;
             switch(answer2) {
@@ -69,6 +69,12 @@ int main() {
                 cout << "Give account name: ";
                 cin >> account_name; cout << endl;
                 bank_inst.add_account(member_id, 0, account_name);
+                break;
+              case 5:
+                account_id = get_int_input("Give account id: ", 0, -1);
+                bank_inst.rm_account(member_id, account_id) ?
+                  cout << "Success. Account removed.":
+                  cout << "Failure. Account not found." ;
                 break;
               default:
                 cout << "Invalid input." << endl;

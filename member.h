@@ -11,7 +11,7 @@ class member {
     ~member();
     void print_member();
     void add_account(double, string);
-    void rm_account();
+    bool rm_account(int);
     int get_id();
     class member *next;
     int transact(int, double);

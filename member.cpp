@@ -66,8 +66,34 @@ void member::add_account(double balance, string name) {
 }
 
 
-void member::rm_account() {
-  // delete account
+bool member::rm_account(int id) {
+  if(!this->accounts) {
+    // fail if account linked list is empty
+    return 0;
+  }
+  if(this->accounts->get_id() == id) {
+    // if the first account is our target
+    // take it out of the linked list and delete it
+    account *target_account = this->accounts;
+    this->accounts = this->accounts->next;
+    delete target_account;
+    return 1;
+  } else {
+    // if non-empty and target is not first one
+    account *prev_account = this->accounts;
+    account *account_iterator = this->accounts->next;
+    while(account_iterator) {
+      // iterate through accounts
+      if(account_iterator->get_id() == id) {
+        // take the target account out of the linked list
+        prev_account->next = account_iterator->next;
+        delete prev_account;
+        return 1;
+      }
+      prev_account = account_iterator;
+      account_iterator = account_iterator->next;
+    }
+  }
 }
 
 

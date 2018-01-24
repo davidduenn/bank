@@ -50,8 +50,13 @@ int bank::add_account(int member_id, double balance=0.0, string name="") {
 }
 
 
-void bank::rm_member() {
-  // delete member
+bool bank::rm_account(int member_id, int account_id) {
+  member *member_ptr = get_member(member_id);
+  if(!member_ptr) {
+    return 0;
+  } else {
+    return member_ptr->rm_account(account_id);
+  }
 }
 
 
@@ -77,6 +82,7 @@ int bank::transact(int member_id, int account, double amnt) {
   return member_ptr->transact(account, amnt);
 }
 
+
 double bank::get_balance(int member_id, int account_id) {
   member *member_ptr = get_member(member_id);
   if(member_ptr == nullptr) {
@@ -85,9 +91,11 @@ double bank::get_balance(int member_id, int account_id) {
   return member_ptr->get_balance(account_id);
 }
 
+
 bool bank::member_exists(int member_id) {
   return (get_member(member_id) ? 1 : 0);
 }
+
 
 member* bank::get_member(int member_id) {
   member *member_ptr = this->members;
