@@ -7,7 +7,7 @@ using namespace std;
 
 class member {
   public:
-    member(string, int, char);
+    member(string, int, char, int);
     ~member();
     void print_member();
     void add_account(double, string);

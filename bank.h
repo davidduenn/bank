@@ -17,6 +17,7 @@ class bank {
         int transact(int, int, double);
         double get_balance(int, int);
         bool member_exists(int);
+        int generate_member_id();
     private:
         class member *members;
         member* get_member(int);

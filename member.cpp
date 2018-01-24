@@ -1,18 +1,14 @@
 #include <iostream>
-#include <stdlib.h> // rand
 #include "member.h"
-
-#define MAX_NUM_ACCOUNTS 9000
 
 using namespace std;
 
 
-member::member(string name="", int age=0, char currency='$') {
-  id = 1000 + rand() %MAX_NUM_ACCOUNTS;
-  // To-Do: only set id if it's not already in use
+member::member(string name="", int age=0, char currency='$', int id=0) {
   this->name = name;
   this->age = age;
   this->currency = currency;
+  this->id = id;
   this->accounts = nullptr;
   this->next = nullptr;
 }

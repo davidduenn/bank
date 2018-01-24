@@ -1,5 +1,8 @@
 #include <iostream>
+#include <stdlib.h> // rand
 #include "bank.h"
+
+#define MAX_NUM_MEMBERS 9000
 
 using namespace std;
 
@@ -21,7 +24,7 @@ bank::~bank() {
 
 
 int bank::add_member(string name, int age, char currency) {
-  member *new_member = new member(name, age, currency);
+  member *new_member = new member(name, age, currency, generate_member_id());
   if(this->members == nullptr) {
     // if this is the first member
     this->members = new_member;
@@ -128,4 +131,18 @@ member* bank::get_member(int member_id) {
     }
   }
   return nullptr;
+}
+
+
+int bank::generate_member_id() {
+  int id = 0;
+  int tries = 0;
+  do {
+    // create id and return if it's not in use
+    id = 1000 + rand() %MAX_NUM_MEMBERS;
+    if(tries++ > (MAX_NUM_MEMBERS * 0.9)) {
+      cout << "MAX_NUM_MEMBERS being hit. Increase MAX_NUM_MEMBERS." << endl;
+    }
+  } while (member_exists(id));
+  return id;
 }
