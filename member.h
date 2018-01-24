@@ -8,7 +8,6 @@ using namespace std;
 class member {
   public:
     void print_member();
-    class account *accounts;
     void add_account(double, string);
     void rm_account();
     member(string, int, char);
@@ -17,6 +16,7 @@ class member {
     int transact(int, double);
     double get_balance(int);
   private:
+    class account *accounts;
     int id;
     char currency ;
     int age;
