@@ -7,10 +7,11 @@ using namespace std;
 
 class member {
   public:
+    member(string, int, char);
+    ~member();
     void print_member();
     void add_account(double, string);
     void rm_account();
-    member(string, int, char);
     int get_id();
     class member *next_member;
     int transact(int, double);

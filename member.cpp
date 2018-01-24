@@ -7,6 +7,22 @@
 using namespace std;
 
 
+member::member(string name="", int age=0, char currency='$') {
+  id = 1000 + rand() %MAX_NUM_ACCOUNTS;
+  // To-Do: only set id if it's not already in use
+  this->name = name;
+  this->age = age;
+  this->currency = currency;
+  this->accounts = nullptr;
+  this->next_member = nullptr;
+}
+
+
+member::~member() {
+  //delete member;
+}
+
+
 void member::print_member() {
   cout << "-----" << endl;
   cout << "Name: " << name << endl;
@@ -48,16 +64,6 @@ void member::rm_account() {
   // delete account
 }
 
-
-member::member(string name="", int age=0, char currency='$') {
-  id = 1000 + rand() %MAX_NUM_ACCOUNTS;
-  // To-Do: only set id if it's not already in use
-  this->name = name;
-  this->age = age;
-  this->currency = currency;
-  this->accounts = nullptr;
-  this->next_member = nullptr;
-}
 
 int member::get_id() {
   return id;

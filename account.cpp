@@ -12,6 +12,10 @@ account::account(int account_id, double balance, string name) {
 }
 
 
+account::~account() {
+}
+
+
 int account::transact(double amount) {
     double new_balance = balance+amount;
     if(new_balance>=0) {

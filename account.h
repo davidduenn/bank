@@ -7,6 +7,7 @@ using namespace std;
 class account {
     public:
         account(int, double, string);
+        ~account();
         int transact(double);
         void print_account(char);
         double get_balance();

@@ -9,6 +9,10 @@ bank::bank() {
 }
 
 
+bank::~bank() {
+}
+
+
 int bank::add_member(string name, int age, char currency) {
   member *new_member = new member(name, age, currency);
   if(this->members == nullptr) {

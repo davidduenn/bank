@@ -8,6 +8,7 @@
 class bank {
     public:
         bank();
+        ~bank();
         //bool account_exists(int);
         int add_member(string, int, char);
         int add_account(int, double, string);
