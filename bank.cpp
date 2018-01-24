@@ -10,6 +10,13 @@ bank::bank() {
 
 
 bank::~bank() {
+  member *member_iterator = this->members;
+  while(member_iterator) {
+    // run through members and delete them
+    member *target_member = member_iterator;
+    member_iterator = member_iterator->next_member;
+    delete target_member;
+  }
 }
 
 

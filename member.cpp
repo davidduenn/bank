@@ -19,7 +19,13 @@ member::member(string name="", int age=0, char currency='$') {
 
 
 member::~member() {
-  //delete member;
+  account *account_iterator = this->accounts;
+  while(account_iterator) {
+    // run through accounts and delete them
+    account *target_account = account_iterator;
+    account_iterator = account_iterator->next;
+    delete target_account;
+  }
 }
 
 
