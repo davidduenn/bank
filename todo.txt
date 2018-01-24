@@ -13,3 +13,5 @@ only set member id if it doesn't already exist
 move 'next' account pointer to private
 
 Add in connections for a DB
+
+bank::add_account return bool?
