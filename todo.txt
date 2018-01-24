@@ -15,3 +15,5 @@ only set member id if it doesn't already exist
 add destructors
 
 move 'next' account pointer to private
+
+Add in connections for a DB
