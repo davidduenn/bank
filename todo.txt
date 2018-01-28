@@ -1,15 +1,11 @@
 make a server which listens to a port and clients which connect to the server for transactions.
 
-fix unit test after member code introduced
+fix test_units after member code introduced
 
 implement rm_member
 
 Merge in the old bank.cpp file
 
-only set member id if it doesn't already exist
-
-move 'next' account pointer to private
-
 Add in connections for a DB
 
-Fix up test_units
+Use a different data structure than a linked list for members?

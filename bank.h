@@ -21,7 +21,6 @@ class bank {
     private:
         class member *members;
         member* get_member(int);
-        //should use a different data structure?
 };
 
 #endif
