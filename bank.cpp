@@ -58,11 +58,11 @@ void bank::rm_member(int id) {
 
 
 // should this return a bool instead?
-int bank::add_account(int member_id, double balance=0.0, string name="") {
+bool bank::add_account(int member_id, double balance=0.0, string name="") {
   member *member_ptr = get_member(member_id);
   if(!member_ptr) {
     cout << "Failure. Member not found." << endl;
-    return -1;
+    return 0;
   } else {
     member_ptr->add_account(balance, name);
     return 1;

@@ -11,7 +11,7 @@ class bank {
         ~bank();
         int add_member(string, int, char);
         void rm_member(int);
-        int add_account(int, double, string);
+        bool add_account(int, double, string);
         bool rm_account(int, int);
         void print_bank();
         int transact(int, int, double);
