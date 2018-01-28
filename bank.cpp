@@ -41,7 +41,7 @@ int bank::add_member(string name, int age, char currency) {
 }
 
 
-void bank::rm_member(int id) {
+bool bank::rm_member(int id) {
   /*
   member *prev_member = nullptr;
   member *member_iterator = this->members;

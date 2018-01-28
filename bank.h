@@ -10,7 +10,7 @@ class bank {
         bank();
         ~bank();
         int add_member(string, int, char);
-        void rm_member(int);
+        bool rm_member(int);
         bool add_account(int, double, string);
         bool rm_account(int, int);
         void print_bank();

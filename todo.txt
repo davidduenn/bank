@@ -12,6 +12,4 @@ move 'next' account pointer to private
 
 Add in connections for a DB
 
-rm_account or rm_member return bool?
-
 Fix up test_units
