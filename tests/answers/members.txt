@@ -42,12 +42,10 @@ Give currency char:
 -----
 Name: David Duenn
 Age: 90 Y.O.
-Member ID: 1848
 No accounts
 -----
 Name: Foo Bar
 Age: 8 Y.O.
-Member ID: 4572
 No accounts
 
 
