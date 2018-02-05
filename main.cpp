@@ -75,7 +75,13 @@ int main() {
               case 4:
                 cout << "Give account name: ";
                 cin >> account_name; cout << endl;
-                bank_inst.add_account(member_id, 0, account_name);
+                do {
+                  amount = get_int_input("Give inital account balance: ", 0, -1);
+                  if(amount == -1) {
+                    cout << "Invalid input. Answer should have been a positive number" << endl;
+                  }
+                } while(amount < 0);
+                bank_inst.add_account(member_id, amount, account_name);
                 break;
               case 5:
                 account_id = get_int_input("Give account id: ", 0, -1);
