@@ -13,7 +13,7 @@ int main() {
     srand(time(nullptr)); // seed random number
 
     while(1) {
-        int answer1 = get_int_input("1 to exit\n2 to print bank\n3 to add member\n4 to access member\n", 1, 4);
+        int answer1 = get_int_input("1 to exit\n2 to print bank\n3 to add member\n4 to remove member\n5 to access member\n", 1, 5);
 
         int member_id = 0;
         int account_id = 0;
@@ -42,6 +42,12 @@ int main() {
             cout << bank_inst.add_member(member_name, age, currency) << endl;
             break;
           case 4:
+            member_id = get_int_input("Give member id: ", 0, -1);
+            bank_inst.rm_member(member_id) ?
+              cout << "Success. Member removed.":
+              cout << "Failure. Member not found.";
+            break;
+          case 5:
             member_id = get_int_input("Give member id: ", 0, -1);
             if(!bank_inst.member_exists(member_id)) {
               // break if member does not exist

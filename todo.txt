@@ -2,8 +2,6 @@ make a server which listens to a port and clients which connect to the server fo
 
 fix test_units after member code introduced
 
-implement rm_member
-
 Merge in the old bank.cpp file
 
 Add in connections for a DB

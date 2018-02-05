@@ -42,22 +42,36 @@ int bank::add_member(string name, int age, char currency) {
 
 
 bool bank::rm_member(int id) {
-  /*
-  member *prev_member = nullptr;
-  member *member_iterator = this->members;
-  while(member_iterator != nullptr) {
-    if(member_iterator->get_id() == id) {
-      prev_member->next = member_iterator->next;
-      delete member_iterator;
-    }
-    prev_member = member_iterator;
-    member_iterator = member_iterator->next;
+  if(!this->members) {
+    // fail if member linked list is empty
+    return 0;
   }
-  */
+  if(this->members->get_id() == id) {
+    // if the first member is our target
+    // take it out of the linked list and delete it
+    member *target_member = this->members;
+    this->members = this->members->next;
+    delete target_member;
+    return 1;
+  } else {
+    // if non-empty and target is not first one
+    member *prev_member = this->members;
+    member *member_iterator = this->members->next;
+    while(member_iterator) {
+      // iterate through members
+      if(member_iterator->get_id() == id) {
+        // take the target member out of the linked list
+        prev_member->next = member_iterator->next;
+        delete member_iterator;
+        return 1;
+      }
+      prev_member = member_iterator;
+      member_iterator = member_iterator->next;
+    }
+  }
 }
 
 
-// should this return a bool instead?
 bool bank::add_account(int member_id, double balance=0.0, string name="") {
   member *member_ptr = get_member(member_id);
   if(!member_ptr) {
@@ -74,7 +88,7 @@ bool bank::add_account(int member_id, double balance=0.0, string name="") {
 bool bank::rm_account(int member_id, int account_id) {
   member *member_ptr = get_member(member_id);
   if(!member_ptr) {
-    cout << "Failure. Member not found." << endl;
+    cout << "failure. member not found." << endl;
     return 0;
   } else {
     return member_ptr->rm_account(account_id);
