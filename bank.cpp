@@ -112,6 +112,16 @@ void bank::print_bank() {
 }
 
 
+void bank::print_member(int member_id) {
+  member *member_ptr = get_member(member_id);
+  if(!member_ptr) {
+    cout << "Failure. Member not found." << endl;
+    return;
+  }
+  member_ptr->print_member();
+}
+
+
 int bank::transact(int member_id, int account, double amnt) {
   member *member_ptr = get_member(member_id);
   if(!member_ptr) {

@@ -54,7 +54,7 @@ int main() {
               cout << "Failure. Member not found." << endl;
               break;
             }
-            answer2 = get_int_input("Deposit (1), Withdraw (2), Show Balance (3), Add Account (4), Remove Account (5)?\n", 1, 5);
+            answer2 = get_int_input("Deposit (1), Withdraw (2), Show Balance (3), Add Account (4), Remove Account (5), Print Member (6)?\n", 1, 5);
 
             double amount;
             switch(answer2) {
@@ -82,6 +82,9 @@ int main() {
                 bank_inst.rm_account(member_id, account_id) ?
                   cout << "Success. Account removed.":
                   cout << "Failure. Account not found." ;
+                break;
+              case 6:
+                bank_inst.print_member(member_id);
                 break;
               default:
                 cout << "Invalid input." << endl;

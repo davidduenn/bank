@@ -13,6 +13,7 @@ class bank {
         bool add_account(int, double, string);
         bool rm_account(int, int);
         void print_bank();
+        void print_member(int);
         int transact(int, int, double);
         double get_balance(int, int);
         bool member_exists(int);
