@@ -4,7 +4,6 @@
 #include <string>
 #include "member.h"
 
-
 class bank {
     public:
         bank();

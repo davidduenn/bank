@@ -3,7 +3,6 @@
 
 #include <string>
 #include "account.h"
-using namespace std;
 
 class member {
   public:

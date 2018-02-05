@@ -124,7 +124,3 @@ double member::get_balance(int account_id) {
   cout << "Failed. Account not found" << endl;
   return -1;
 }
-
-// todo transact and get_balance are mostly 
-// the same code. Pull common code to a 
-// function

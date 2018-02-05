@@ -3,6 +3,7 @@
 
 #include <string>
 using namespace std;
+  // Provides "string" type everywhere
 
 class account {
     public:
@@ -18,8 +19,6 @@ class account {
         int id;
         string name;
 };
-// Have a super class and have it inherit
-// down to the checking or savings account?
 
 #endif
 
