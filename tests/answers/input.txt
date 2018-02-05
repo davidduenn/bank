@@ -1,7 +1,8 @@
 1 to exit
 2 to print bank
 3 to add member
-4 to access member
+4 to remove member
+5 to access member
 
 Non-numeric input.
 Invalid input.
@@ -19,7 +20,8 @@ Answer should have been between 1 and 4.
 1 to exit
 2 to print bank
 3 to add member
-4 to access member
+4 to remove member
+5 to access member
 
 Invalid input.
 Answer should have been between 1 and 4.
@@ -36,7 +38,8 @@ Answer should have been between 1 and 4.
 1 to exit
 2 to print bank
 3 to add member
-4 to access member
+4 to remove member
+5 to access member
 
 Bank is empty
 
@@ -52,7 +55,8 @@ Bank is empty
 1 to exit
 2 to print bank
 3 to add member
-4 to access member
+4 to remove member
+5 to access member
 
 Give member name: 
 Give age: 
@@ -72,7 +76,8 @@ Give currency char:
 1 to exit
 2 to print bank
 3 to add member
-4 to access member
+4 to remove member
+5 to access member
 
 Non-numeric input.
 Invalid input.
@@ -90,10 +95,10 @@ Answer should have been between 1 and 4.
 1 to exit
 2 to print bank
 3 to add member
-4 to access member
+4 to remove member
+5 to access member
 
 Failure. Member not found.
-
 
 
 
@@ -106,5 +111,6 @@ Failure. Member not found.
 1 to exit
 2 to print bank
 3 to add member
-4 to access member
+4 to remove member
+5 to access member
 
