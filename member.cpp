@@ -99,28 +99,33 @@ int member::get_id() {
 
 
 int member::transact(int account_id, double amnt) {
-  account *account_ptr = this->accounts;
-  while(account_ptr != nullptr) {
-    if(account_ptr->get_id() == account_id) {
-      return account_ptr->transact(amnt);
-    } else {
-      account_ptr = account_ptr->next;
-    }
+  account *account_ptr = get_account(account_id);
+  if(!account_ptr) {
+    cout << "Failed. Account not found" << endl;
+    return 0;
   }
-  cout << "Failed. Account not found" << endl;
-  return 0;
+  return account_ptr->transact(amnt);
 }
 
 
 double member::get_balance(int account_id) {
+  account *account_ptr = get_account(account_id);
+  if(!account_ptr) {
+    cout << "Failed. Account not found" << endl;
+    return -1;
+  }
+  return account_ptr->get_balance();
+}
+
+
+account* member::get_account(int account_id) {
   account *account_ptr = this->accounts;
   while(account_ptr != nullptr) {
     if(account_ptr->get_id() == account_id) {
-      return account_ptr->get_balance();
+      return account_ptr;
     } else {
       account_ptr = account_ptr->next;
     }
   }
-  cout << "Failed. Account not found" << endl;
-  return -1;
+  return nullptr;
 }

@@ -11,5 +11,3 @@ Use a different data structure than a linked list for members?
 Have a super account class and have it inherit down to the checking or savings account?
 
 Allow account to be added with an initial deposit
-
-todo transact and get_balance are mostly the same code. Pull common code to a function

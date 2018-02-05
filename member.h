@@ -17,6 +17,7 @@ class member {
     double get_balance(int);
   private:
     class account *accounts;
+    account* get_account(int);
     int id;
     char currency ;
     int age;
