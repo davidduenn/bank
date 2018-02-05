@@ -1,5 +1,6 @@
 1 to exit
 2 to print bank
 3 to add member
-4 to access member
+4 to remove member
+5 to access member
 
