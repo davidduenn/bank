@@ -54,7 +54,7 @@ int main() {
               cout << "Failure. Member not found." << endl;
               break;
             }
-            answer2 = get_int_input("Deposit (1), Withdraw (2), Show Balance (3), Add Account (4), Remove Account (5), Print Member (6)?\n", 1, 5);
+            answer2 = get_int_input("Deposit (1), Withdraw (2), Show Balance (3), Add Account (4), Remove Account (5), Print Member (6)?\n", 1, 6);
 
             double amount;
             switch(answer2) {
@@ -88,13 +88,13 @@ int main() {
                 break;
               default:
                 cout << "Invalid input." << endl;
-                cout << "Answer should have been between 1 and 3." << endl;
+                cout << "Answer should have been between 1 and 6." << endl;
                 break;
             }
             break;
           default:
             cout << "Invalid input." << endl;
-            cout << "Answer should have been between 1 and 4." << endl;
+            cout << "Answer should have been between 1 and 5." << endl;
             break;
         }
         clear_screen();
