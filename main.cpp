@@ -70,7 +70,7 @@ int main() {
                 break;
               case 3:
                 account_id = get_int_input("Give account id: ", 0, -1);
-                cout << "Balance: " << bank_inst.get_balance(member_id, account_id) << endl;
+                cout << "Balance: " << bank_inst.get_currency(member_id) << bank_inst.get_balance(member_id, account_id) << endl;
                 break;
               case 4:
                 cout << "Give account name: ";

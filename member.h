@@ -15,6 +15,7 @@ class member {
     class member *next;
     int transact(int, double);
     double get_balance(int);
+    char get_currency();
   private:
     class account *accounts;
     account* get_account(int);

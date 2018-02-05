@@ -142,6 +142,16 @@ double bank::get_balance(int member_id, int account_id) {
 }
 
 
+char bank::get_currency(int member_id) {
+  member *member_ptr = get_member(member_id);
+  if(!member_ptr) {
+    cout << "Failure. Member not found." << endl;
+    return -1.0;
+  }
+  return member_ptr->get_currency();
+}
+
+
 bool bank::member_exists(int member_id) {
   return (get_member(member_id) ? 1 : 0);
 }

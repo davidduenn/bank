@@ -16,6 +16,7 @@ class bank {
         void print_member(int);
         int transact(int, int, double);
         double get_balance(int, int);
+        char get_currency(int);
         bool member_exists(int);
         int generate_member_id();
     private:

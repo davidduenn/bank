@@ -129,3 +129,8 @@ account* member::get_account(int account_id) {
   }
   return nullptr;
 }
+
+
+char member::get_currency() {
+  return this->currency;
+}
