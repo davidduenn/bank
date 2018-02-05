@@ -20,11 +20,11 @@ int account::transact(double amount) {
     double new_balance = balance+amount;
     if(new_balance>=0) {
         balance = new_balance;
-        return 0;
+        return 1;
     }
     else {
         cout << "Failed. Not enough funds to make withdrawl." << endl;
-        return 1;
+        return 0;
     }
 }
 

@@ -41,12 +41,12 @@ int bank::add_member(string name, int age, char currency) {
 }
 
 
-bool bank::rm_member(int id) {
+bool bank::rm_member(int member_id) {
   if(!this->members) {
     // fail if member linked list is empty
     return 0;
   }
-  if(this->members->get_id() == id) {
+  if(this->members->get_id() == member_id) {
     // if the first member is our target
     // take it out of the linked list and delete it
     member *target_member = this->members;
@@ -59,7 +59,7 @@ bool bank::rm_member(int id) {
     member *member_iterator = this->members->next;
     while(member_iterator) {
       // iterate through members
-      if(member_iterator->get_id() == id) {
+      if(member_iterator->get_id() == member_id) {
         // take the target member out of the linked list
         prev_member->next = member_iterator->next;
         delete member_iterator;
@@ -68,7 +68,9 @@ bool bank::rm_member(int id) {
       prev_member = member_iterator;
       member_iterator = member_iterator->next;
     }
+    return 0;
   }
+  return 0;
 }
 
 
@@ -114,7 +116,7 @@ int bank::transact(int member_id, int account, double amnt) {
   member *member_ptr = get_member(member_id);
   if(!member_ptr) {
     cout << "Failure. Member not found." << endl;
-    return -1;
+    return 0;
   }
   return member_ptr->transact(account, amnt);
 }

@@ -102,14 +102,13 @@ int member::transact(int account_id, double amnt) {
   account *account_ptr = this->accounts;
   while(account_ptr != nullptr) {
     if(account_ptr->get_id() == account_id) {
-      account_ptr->transact(amnt);
-      return 0;
+      return account_ptr->transact(amnt);
     } else {
       account_ptr = account_ptr->next;
     }
   }
   cout << "Failed. Account not found" << endl;
-  return 1;
+  return 0;
 }
 
 
@@ -123,7 +122,7 @@ double member::get_balance(int account_id) {
     }
   }
   cout << "Failed. Account not found" << endl;
-  return 1;
+  return -1;
 }
 
 // todo transact and get_balance are mostly 

@@ -1,35 +1,839 @@
-account exists
-account exists
-account exists
-no such account
-Trnx succeeded
-Trnx succeeded
-Trnx succeeded
-----------
-full name: David Duenn
-balance:   23
-----------
-----------
-full name: John Wayne
-balance:   130
-----------
-----------
-full name: Pope Francis
-balance:   24
-----------
-Trnx succeeded
-Trnx succeeded
-Not enough funds to make withdrawl. Cancelled.
-Tranx failed
-----------
-full name: David Duenn
-balance:   0
-----------
-----------
-full name: John Wayne
-balance:   330
-----------
-----------
-full name: Pope Francis
-balance:   24
-----------
+Failed. Account not found
+Failed. Not enough funds to make withdrawl.
+Failed. Account not found
+Failed. Account not found
+Failed. Account not found
+Failure. Member not found.
+Failure. Member not found.
+-----
+Name: David Duenn
+Age: 94 Y.O.
+  ---
+  name:      savings
+  balance:   $407
+-----
+Name: Pope Francis
+Age: 44 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: The President
+Age: 64 Y.O.
+No accounts
+-----
+Name: Prime Minister
+Age: 74 Y.O.
+  ---
+  name:      checking
+  balance:   $502
+-----
+Name: David Duenn
+Age: 94 Y.O.
+No accounts
+-----
+Name: Pope Francis
+Age: 44 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: John Wayne
+Age: 62 Y.O.
+No accounts
+-----
+Name: The President
+Age: 64 Y.O.
+No accounts
