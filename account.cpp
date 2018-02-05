@@ -23,7 +23,7 @@ int account::transact(double amount) {
         return 1;
     }
     else {
-        cout << "Failed. Not enough funds to make withdrawl." << endl;
+        cout << "Failure. Not enough funds to make withdrawl." << endl;
         return 0;
     }
 }

@@ -1,8 +1,8 @@
-Failed. Account not found
-Failed. Not enough funds to make withdrawl.
-Failed. Account not found
-Failed. Account not found
-Failed. Account not found
+Failure. Account not found
+Failure. Not enough funds to make withdrawl.
+Failure. Account not found
+Failure. Account not found
+Failure. Account not found
 Failure. Member not found.
 Failure. Member not found.
 -----

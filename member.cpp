@@ -101,7 +101,7 @@ int member::get_id() {
 int member::transact(int account_id, double amnt) {
   account *account_ptr = get_account(account_id);
   if(!account_ptr) {
-    cout << "Failed. Account not found" << endl;
+    cout << "Failure. Account not found" << endl;
     return 0;
   }
   return account_ptr->transact(amnt);
@@ -111,7 +111,7 @@ int member::transact(int account_id, double amnt) {
 double member::get_balance(int account_id) {
   account *account_ptr = get_account(account_id);
   if(!account_ptr) {
-    cout << "Failed. Account not found" << endl;
+    cout << "Failure. Account not found" << endl;
     return -1;
   }
   return account_ptr->get_balance();
