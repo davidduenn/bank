@@ -1,7 +1,5 @@
 make a server which listens to a port and clients which connect to the server for transactions.
 
-fix test_units after member code introduced
-
 Merge in the old bank.cpp file
 
 Add in connections for a DB
