@@ -5,5 +5,3 @@ Add in connections for a DB
 Use a different data structure than a linked list for members?
 
 add exceptions and handling
-
-In main.cpp, "double amount" is only ever holds ints but should hold doubles. Fix that.
