@@ -13,7 +13,8 @@ int main() {
     srand(time(nullptr)); // seed random number
 
     while(1) {
-        int answer1 = get_int_input("1 to exit\n2 to print bank\n3 to add member\n4 to remove member\n5 to access member\n", 1, 5);
+        cout << "1 Exit\n2 Print bank\n3 Add member\n4 Remove member\n5 Access member\n";
+        int answer1 = get_menu_input(5);
 
         int member_id = 0;
         int account_id = 0;
@@ -33,7 +34,8 @@ int main() {
             cin.ignore(); // clear the cin buffer
             getline(cin, member_name); cout << endl; // getline() can take spaces. cin can't.
             do {
-            age = get_int_input("Give age: ", 0, -1);
+              cout << "Give age: ";
+              age = get_positive_int_input();
             } while(age<0);
             cout << "Give currency char: ";
             cin >> currency; cout << endl;
@@ -42,41 +44,50 @@ int main() {
             cout << bank_inst.add_member(member_name, age, currency) << endl;
             break;
           case 4:
-            member_id = get_int_input("Give member id: ", 0, -1);
+            cout << "Give member id: ";
+            member_id = get_positive_int_input();
             bank_inst.rm_member(member_id) ?
               cout << "Success. Member removed.":
               cout << "Failure. Member not found.";
             break;
           case 5:
-            member_id = get_int_input("Give member id: ", 0, -1);
+            cout << "Give member id: ";
+            member_id = get_positive_int_input();
             if(!bank_inst.member_exists(member_id)) {
               // break if member does not exist
               cout << "Failure. Member not found." << endl;
               break;
             }
-            answer2 = get_int_input("Deposit (1), Withdraw (2), Show Balance (3), Add Account (4), Remove Account (5), Print Member (6)?\n", 1, 6);
+            cout << "1 Deposit\n2 Withdraw\n3 Show Balance\n4 Add Account\n5 Remove Account\n6 Print Member\n";
+            answer2 = get_menu_input(6);
 
             double amount;
             switch(answer2) {
               case 1:
-                amount = get_int_input("How much would you like to deposit?\n", 0, -1);
-                account_id = get_int_input("Give account id: ", 0, -1);
+                cout << "How much would you like to deposit?" << endl;
+                amount = get_positive_double_input();
+                cout << "Give account id: ";
+                account_id = get_positive_int_input();
                 bank_inst.transact(member_id, account_id, amount);
                 break;
               case 2:
-                amount = get_int_input("How much would you like to withdraw?\n", 0, -1);
-                account_id = get_int_input("Give account id: ", 0, -1);
+                cout << "How much would you like to withdraw?" << endl;
+                amount = get_positive_double_input();
+                cout << "Give account id: ";
+                account_id = get_positive_int_input();
                 bank_inst.transact(member_id, account_id, -amount);
                 break;
               case 3:
-                account_id = get_int_input("Give account id: ", 0, -1);
+                cout << "Give account id: ";
+                account_id = get_positive_int_input();
                 cout << "Balance: " << bank_inst.get_currency(member_id) << bank_inst.get_balance(member_id, account_id) << endl;
                 break;
               case 4:
                 cout << "Give account name: ";
                 cin >> account_name; cout << endl;
                 do {
-                  amount = get_int_input("Give inital account balance: ", 0, -1);
+                  cout << "Give inital account balance: ";
+                  amount = get_positive_double_input();
                   if(amount == -1) {
                     cout << "Invalid input. Answer should have been a positive number" << endl;
                   }
@@ -84,7 +95,8 @@ int main() {
                 bank_inst.add_account(member_id, amount, account_name);
                 break;
               case 5:
-                account_id = get_int_input("Give account id: ", 0, -1);
+                cout << "Give account id: ";
+                account_id = get_positive_int_input();
                 bank_inst.rm_account(member_id, account_id) ?
                   cout << "Success. Account removed.":
                   cout << "Failure. Account not found." ;
