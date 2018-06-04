@@ -1,8 +1,8 @@
-1 to exit
-2 to print bank
-3 to add member
-4 to remove member
-5 to access member
+1 Exit
+2 Print bank
+3 Add member
+4 Remove member
+5 Access member
 
 Non-numeric input.
 Invalid input.
@@ -17,11 +17,11 @@ Answer should have been between 1 and 5.
 
 
 
-1 to exit
-2 to print bank
-3 to add member
-4 to remove member
-5 to access member
+1 Exit
+2 Print bank
+3 Add member
+4 Remove member
+5 Access member
 
 Invalid input.
 Answer should have been between 1 and 5.
@@ -35,11 +35,11 @@ Answer should have been between 1 and 5.
 
 
 
-1 to exit
-2 to print bank
-3 to add member
-4 to remove member
-5 to access member
+1 Exit
+2 Print bank
+3 Add member
+4 Remove member
+5 Access member
 
 Bank is empty
 
@@ -52,11 +52,11 @@ Bank is empty
 
 
 
-1 to exit
-2 to print bank
-3 to add member
-4 to remove member
-5 to access member
+1 Exit
+2 Print bank
+3 Add member
+4 Remove member
+5 Access member
 
 Give member name: 
 Give age: 
@@ -73,11 +73,11 @@ Give currency char:
 
 
 
-1 to exit
-2 to print bank
-3 to add member
-4 to remove member
-5 to access member
+1 Exit
+2 Print bank
+3 Add member
+4 Remove member
+5 Access member
 
 Non-numeric input.
 Invalid input.
@@ -92,11 +92,11 @@ Answer should have been between 1 and 5.
 
 
 
-1 to exit
-2 to print bank
-3 to add member
-4 to remove member
-5 to access member
+1 Exit
+2 Print bank
+3 Add member
+4 Remove member
+5 Access member
 
 Failure. Member not found.
 
@@ -108,9 +108,9 @@ Failure. Member not found.
 
 
 
-1 to exit
-2 to print bank
-3 to add member
-4 to remove member
-5 to access member
+1 Exit
+2 Print bank
+3 Add member
+4 Remove member
+5 Access member
 
