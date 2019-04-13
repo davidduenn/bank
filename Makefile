@@ -57,7 +57,7 @@ valgrind:	MY_BANK
 
 
 clean:	
-	rm *.o cpp_test_units
+	rm *.o
 
 nuke:	clean
 	rm MY_BANK
